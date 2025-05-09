@@ -1,0 +1,68 @@
+<odoo>
+    <record id="view_everee_config_settings" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.everee</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='about']" position="before">
+                <div
+                    class="app_settings_block"
+                    data-string="Everee Integration"
+                    string="Everee Integration"
+                    name="everee_settings"
+                >
+                    <block title="Everee API Integration" id="everee_settings">
+                        <setting
+                            string="Enable Integration"
+                            help="Enable the Everee API integration."
+                        >
+                            <field name="everee_enabled" />
+                        </setting>
+                        <setting
+                            invisible="not everee_enabled"
+                            string="API Base URL"
+                            help="Set the API Base URL for Everee."
+                            documentation="https://developer.everee.com/reference/"
+                        >
+                            <field
+                                name="api_base_url"
+                                title="The API Base URL for Everee."
+                            />
+                        </setting>
+                        <setting
+                            invisible="not everee_enabled"
+                            string="Company tenant ID"
+                            help="Set the Company tenant ID for Everee."
+                            documentation="https://developer.everee.com/docs/authentication-api-tokens"
+                        >
+                            <field
+                                name="tenant_id"
+                                title="Your Everee Company tenant ID."
+                            />
+                        </setting>
+                        <setting
+                            invisible="not everee_enabled"
+                            string="API Token"
+                            help="Set the API Token for Everee."
+                            documentation="https://developer.everee.com/docs/authentication-api-tokens"
+                        >
+                            <field
+                                name="api_token"
+                                title="The API Token generated into Everee."
+                            />
+                            <div class="mt8" groups="base.group_no_one">
+                                <button
+                                    name="action_test_everee_connection"
+                                    icon="oi-arrow-right"
+                                    type="object"
+                                    string="Test Connection"
+                                    class="btn-link"
+                                />
+                            </div>
+                        </setting>
+                    </block>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

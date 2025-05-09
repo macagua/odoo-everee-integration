@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* everee_base_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-20 20:40+0000\n"
+"PO-Revision-Date: 2025-04-20 22:52+0200\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "API Base URL"
+msgstr "URL base de la API"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "API Token"
+msgstr "Token de API"
+
+#. module: everee_base_connector
+#: model:ir.model.fields,field_description:everee_base_connector.field_res_config_settings__tenant_id
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Company tenant ID"
+msgstr "ID de la empresa"
+
+#. module: everee_base_connector
+#: model:ir.model,name:everee_base_connector.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: everee_base_connector
+#: model:ir.model.fields,field_description:everee_base_connector.field_res_config_settings__everee_enabled
+msgid "Enable Everee Integration"
+msgstr "Habilitar la integración de Everee"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Enable Integration"
+msgstr "Habilitar integración"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Enable the Everee API integration."
+msgstr "Activa la integración de la API de Everee."
+
+#. module: everee_base_connector
+#: model:ir.model.fields,field_description:everee_base_connector.field_res_config_settings__api_base_url
+msgid "Everee API Base URL"
+msgstr "URL de la base de Everee"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Everee API Integration"
+msgstr "Integración de la API Everee"
+
+#. module: everee_base_connector
+#: model:ir.model.fields,field_description:everee_base_connector.field_res_config_settings__api_token
+msgid "Everee API Key"
+msgstr "Clave API de Everee"
+
+#. module: everee_base_connector
+#. odoo-python
+#: code:addons/everee_base_connector/models/res_config_settings.py:0
+msgid "Everee Connection Successful"
+msgstr "Éxito de la conexión a Everee"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Everee Integration"
+msgstr "Integración con Everee"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Set the API Base URL for Everee."
+msgstr "Establezca la URL base de la API para Everee."
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Set the API Token for Everee."
+msgstr "Establezca el Token de la API para Everee."
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Set the Company tenant ID for Everee."
+msgstr "Establezca el ID de la empresa para Everee."
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Test Connection"
+msgstr "Probar conexión"
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "The API Base URL for Everee."
+msgstr "La URL base de la API para Everee."
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "The API Token generated into Everee."
+msgstr "El Token de la API generado en Everee."
+
+#. module: everee_base_connector
+#: model_terms:ir.ui.view,arch_db:everee_base_connector.view_everee_config_settings
+msgid "Your Everee Company tenant ID."
+msgstr "Su ID de la empresa en Everee."

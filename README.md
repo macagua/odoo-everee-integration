@@ -19,6 +19,12 @@ This repository included some Odoo addons for the Everee API integration
 
 This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[everee_base_connector](everee_base_connector/) | 18.0.1.0.0 | [![macagua](https://github.com/macagua.png?size=30px)](https://dev.gobonum.com/macagua)  | Base connector to integrate with Everee API
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
