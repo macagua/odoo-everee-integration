@@ -31,7 +31,7 @@ addon | version | maintainers | summary
 
 ## Licenses
 
-This repository is licensed under [AGPL-3.0](LICENSE).
+This repository is [Copyright](LICENSE.md) (C) 2025.
 
 However, each module can have a totally different license, as long as they adhere to Bluebonnet
 policy. Consult each module's `__manifest__.py` file, which contains a `license` key
