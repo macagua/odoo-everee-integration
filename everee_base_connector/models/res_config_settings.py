@@ -20,12 +20,17 @@ class ResConfigSettings(models.TransientModel):
         string="Everee API Base URL",
         config_parameter="everee_base_connector.base_url",
         default="https://api.everee.com/api/v2",
+        required=True,
     )
     tenant_id = fields.Char(
-        string="Company tenant ID", config_parameter="everee_base_connector.tenant_id"
+        string="Company tenant ID",
+        config_parameter="everee_base_connector.tenant_id",
+        required=True,
     )
     api_token = fields.Char(
-        string="Everee API Key", config_parameter="everee_base_connector.api_token"
+        string="Everee API Key",
+        config_parameter="everee_base_connector.api_token",
+        required=True,
     )
 
     def action_test_everee_connection(self):
@@ -35,8 +40,8 @@ class ResConfigSettings(models.TransientModel):
         # Headers
         headers = {
             "accept": "application/json",
-            "authorization": f"Basic {encoded_token}",
-            "x-everee-tenant-id": self.tenant_id,
+            "authorization": f"Basic {encoded_token}",  # Basic Auth
+            "x-everee-tenant-id": f"{self.tenant_id}",  # tenant ID
             "content-type": "application/json",
         }
         # Construct the URL
@@ -47,13 +52,17 @@ class ResConfigSettings(models.TransientModel):
             response = requests.get(url, headers=headers, timeout=10)
             # Check if the response is successful
             if response.status_code == 200:
+                message_log = (
+                    f"Request to {url} returned ",
+                    f"{response.status_code}: {response.text}",
+                )
                 self.env["ir.logging"].sudo().create(
                     {
                         "name": "Everee Connection",
                         "type": "server",
                         "level": "info",
                         "dbname": self._cr.dbname,
-                        "message": f"Request to {url} returned {response.status_code}: {response.text}",
+                        "message": message_log,
                         "path": "everee_base_connector/models/res_config_settings.py",
                         "func": "action_test_everee_connection",
                         "line": 27,  # approximate line, optional
@@ -70,22 +79,24 @@ class ResConfigSettings(models.TransientModel):
                     "params": {
                         "title": _("Everee Connection Successful"),
                         "message": _(
-                            f"Successfully connected. Workers found: {len(workers_total)}"
+                            "Successfully connected. Workers found: ",
+                            f"{len(workers_total)}",
                         ),
                         "type": "success",
                         "sticky": False,
                     },
                 }
             else:
+                _logger.error(
+                    "Failed to connect to Everee API. Status Code: "
+                    f"{response.status_code}, Response: {response.text}"
+                )
                 raise UserError(
                     _(
-                        f"Failed to connect to Everee API.\nStatus Code: {response.status_code}\nResponse: {response.text}"
+                        "Failed to connect to Everee API.\nStatus Code: ",
+                        f"{response.status_code}\nResponse: {response.text}",
                     )
                 )
-                _logger.error(
-                    f"Failed to connect to Everee API. Status Code: {response.status_code}, Response: {response.text}"
-                )
-
         except requests.exceptions.RequestException as e:
             self.env["ir.logging"].sudo().create(
                 {
@@ -99,5 +110,5 @@ class ResConfigSettings(models.TransientModel):
                     "line": 27,  # approximate line, optional
                 }
             )
-            raise UserError(_(f"Connection error: {e}"))
             _logger.error(f"Connection error: {e}")
+            raise UserError(_(f"Connection error: {e}")) from e
