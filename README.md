@@ -1,7 +1,7 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/bluebonnet/everee-integration/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/bluebonnet/everee-integration/actions/workflows/pre-commit.yml?query=branch%3A18.0)
-[![Build Status](https://github.com/bluebonnet/everee-integration/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/bluebonnet/everee-integration/actions/workflows/test.yml?query=branch%3A18.0)
+[![Pre-commit Status](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/test.yml/badge.svg?branch=18.0)](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/test.yml?query=branch%3A18.0)
 [![codecov](https://codecov.io/gh/bluebonnet/everee-integration/branch/18.0/graph/badge.svg)](https://codecov.io/gh/bluebonnet/everee-integration)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
