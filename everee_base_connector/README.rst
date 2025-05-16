@@ -42,6 +42,9 @@ To configure this module you have to:
    configure the Everee connection data. You have to set the following
    fields:
 
+   .. image:: https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base_connector/static/description/screenshots/screenshot_step_0.png
+      :alt: Everee API Integration
+
    -  'Enable Everee Integration': Check this field to enable the Everee
       integration.
    -  'API Base URL': The API Base URL for Everee.
@@ -73,7 +76,7 @@ Credits
 Authors
 -------
 
-* BlueBonnet
+* Bluebonnet
 
 Contributors
 ------------
