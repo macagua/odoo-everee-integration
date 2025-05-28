@@ -1,6 +1,6 @@
-=====================
-Everee Base Connector
-=====================
+===========
+Everee Base
+===========
 
 .. 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -14,7 +14,7 @@ Everee Base Connector
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
 .. |badge2| image:: https://img.shields.io/badge/gitea-bluebonnet%2Feveree--integration-lightgray.png?logo=gitea
-    :target: https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_base_connector
+    :target: https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_base
     :alt: bluebonnet/everee-integration
 
 |badge1| |badge2|
@@ -42,7 +42,7 @@ To configure this module you have to:
    configure the Everee connection data. You have to set the following
    fields:
 
-   .. image:: https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base_connector/static/description/screenshots/screenshot_step_0.png
+   .. image:: https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png
       :alt: Everee API Integration
 
    -  'Enable Everee Integration': Check this field to enable the Everee
@@ -66,7 +66,7 @@ Bug Tracker
 Bugs are tracked on `Gitea Issues <https://dev.gobonum.com/BlueBonnet/everee-integration/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://dev.gobonum.com/BlueBonnet/everee-integration/issues/new?body=module:%20everee_base_connector%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://dev.gobonum.com/BlueBonnet/everee-integration/issues/new?body=module:%20everee_base%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -96,6 +96,6 @@ Current maintainer:
 
 |maintainer-macagua| 
 
-This module is part of the `bluebonnet/everee-integration <https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_base_connector>`_ project on Gitea.
+This module is part of the `bluebonnet/everee-integration <https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_base>`_ project on Gitea.
 
 You are welcome to contribute.

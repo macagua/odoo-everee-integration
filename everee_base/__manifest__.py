@@ -1,5 +1,5 @@
 {
-    "name": "Everee Base Connector",
+    "name": "Everee Base",
     "version": "18.0.1.0.0",
     "category": "Technical",
     "summary": "Base connector to integrate with Everee API",

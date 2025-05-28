@@ -14,22 +14,22 @@ class ResConfigSettings(models.TransientModel):
 
     everee_enabled = fields.Boolean(
         string="Enable Everee Integration",
-        config_parameter="everee_base_connector.enabled",
+        config_parameter="everee_base.enabled",
     )
     api_base_url = fields.Char(
         string="Everee API Base URL",
-        config_parameter="everee_base_connector.base_url",
+        config_parameter="everee_base.base_url",
         default="https://api.everee.com/api/v2",
         required=True,
     )
     tenant_id = fields.Char(
         string="Company tenant ID",
-        config_parameter="everee_base_connector.tenant_id",
+        config_parameter="everee_base.tenant_id",
         required=True,
     )
     api_token = fields.Char(
         string="Everee API Key",
-        config_parameter="everee_base_connector.api_token",
+        config_parameter="everee_base.api_token",
         required=True,
     )
 
@@ -45,7 +45,7 @@ class ResConfigSettings(models.TransientModel):
             "content-type": "application/json",
         }
         # Construct the URL
-        url = f"{self.api_base_url}/workers?page=0&size=20"
+        url = f"{self.api_base_url}/workers?page=0&size=1"
 
         try:
             # Request to Everee API
@@ -56,6 +56,7 @@ class ResConfigSettings(models.TransientModel):
                     f"Request to {url} returned ",
                     f"{response.status_code}: {response.text}",
                 )
+                # Log the request to the database
                 self.env["ir.logging"].sudo().create(
                     {
                         "name": "Everee Connection",
@@ -63,34 +64,36 @@ class ResConfigSettings(models.TransientModel):
                         "level": "info",
                         "dbname": self._cr.dbname,
                         "message": message_log,
-                        "path": "everee_base_connector/models/res_config_settings.py",
+                        "path": "everee_base/models/res_config_settings.py",
                         "func": "action_test_everee_connection",
-                        "line": 27,  # approximate line, optional
+                        "line": 36,  # approximate line, optional
                     }
                 )
+                # Log the request to the console
                 _logger.info(
                     f"Request to {url} returned {response.status_code}: {response.text}"
                 )
-
+                # Get the number of workers found
                 workers_total = response.json()
+                # Return a notification with the number of workers found
                 return {
                     "type": "ir.actions.client",
                     "tag": "display_notification",
                     "params": {
                         "title": _("Everee Connection Successful"),
-                        "message": _(
-                            "Successfully connected. Workers found: ",
-                            f"{len(workers_total)}",
-                        ),
+                        "message": _("Successfully connected. Workers found: %d")
+                        % len(workers_total),
                         "type": "success",
                         "sticky": False,
                     },
                 }
             else:
+                # Log the error to the console
                 _logger.error(
                     "Failed to connect to Everee API. Status Code: "
                     f"{response.status_code}, Response: {response.text}"
                 )
+                # Show an error message to the user
                 raise UserError(
                     _(
                         "Failed to connect to Everee API.\nStatus Code: ",
@@ -98,6 +101,7 @@ class ResConfigSettings(models.TransientModel):
                     )
                 )
         except requests.exceptions.RequestException as e:
+            # Log the request to the database
             self.env["ir.logging"].sudo().create(
                 {
                     "name": "Everee Connection Error",
@@ -105,10 +109,12 @@ class ResConfigSettings(models.TransientModel):
                     "level": "error",
                     "dbname": self._cr.dbname,
                     "message": f"Connection error: {str(e)}",
-                    "path": "everee_base_connector/models/res_config_settings.py",
+                    "path": "everee_base/models/res_config_settings.py",
                     "func": "action_test_everee_connection",
                     "line": 27,  # approximate line, optional
                 }
             )
+            # Log the error to the console
             _logger.error(f"Connection error: {e}")
+            # Show an error message to the user
             raise UserError(_(f"Connection error: {e}")) from e
