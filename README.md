@@ -24,6 +24,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [everee_base](everee_base/) | 18.0.1.0.0 | [![macagua](https://github.com/macagua.png?size=30px)](https://dev.gobonum.com/macagua) | Base connector to integrate with Everee API
+[everee_hr](everee_hr/) | 18.0.1.0.0 | [![macagua](https://github.com/macagua.png?size=30px)](https://dev.gobonum.com/macagua) | Human Resources integration with Everee API
 
 [//]: # (end addons)
 

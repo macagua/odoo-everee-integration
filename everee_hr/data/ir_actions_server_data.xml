@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="ir_actions_server_action_export_employees_everee" model="ir.actions.server">
+            <field name="name">Export Employees Selected to Everee</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_view_types">list</field>
+            <field name="state">code</field>
+            <field name="code">
+    records.action_export_employees_everee()
+            </field>
+        </record>
+    </data>
+</odoo>
