@@ -13,7 +13,7 @@ class HrEmployee(models.Model):
     _inherit = "hr.employee"
 
     is_onboarding_started = fields.Boolean(
-        string="Onboarding was started",
+        string="Is this employee onboard on Everee?",
         help="Check this box to mark the employee as onboarding complete.",
         default=False,
         readonly=True,
@@ -23,6 +23,7 @@ class HrEmployee(models.Model):
     )
 
     def post_onboarding_employee(self):
+        """Post the employee data to Everee Onboarding API."""
 
         # Encode API token in Base64
         encoded_token = base64.b64encode(self.company_id.api_token.encode()).decode()
