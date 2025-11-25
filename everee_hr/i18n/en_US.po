@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* everee_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 12:10+0000\n"
+"PO-Revision-Date: 2025-11-25 12:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: everee_hr
+#: model:ir.model.fields,help:everee_hr.field_hr_employee__is_onboarding_started
+msgid "Check this box to mark the employee as onboarding complete."
+msgstr ""
+
+#. module: everee_hr
+#: model:ir.model,name:everee_hr.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Employee data Successfully published"
+msgstr ""
+
+#. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Employee data has been successfully published on Everee."
+msgstr ""
+
+#. module: everee_hr
+#: model_terms:ir.ui.view,arch_db:everee_hr.view_hr_employee
+msgid "Everee Onboarding"
+msgstr ""
+
+#. module: everee_hr
+#: model:ir.model.fields,field_description:everee_hr.field_hr_employee__is_onboarding_started
+msgid "Is this employee onboard on Everee?"
+msgstr ""

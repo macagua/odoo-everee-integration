@@ -13,8 +13,8 @@ Human Resources Everee API Integration
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/github-bluebonnet%2Feveree--integration-lightgray.png?logo=github
-    :target: https://github.com/bluebonnet/everee-integration/tree/18.0/everee_hr
+.. |badge2| image:: https://img.shields.io/badge/gitea-bluebonnet%2Feveree--integration-lightgray.png?logo=gitea
+    :target: https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr
     :alt: bluebonnet/everee-integration
 
 |badge1| |badge2|
@@ -23,10 +23,8 @@ This is a Human Resources module that allows you via Everee API:
 
 - Onboarding for the employees.
 
-- Onboarding for the contractors.
-
-It is built using the requests library and provides methods for making
-GET, POST, PUT, and DELETE requests to the API.
+It is built using the ``requests`` library and for the moment, only
+provides ``POST`` requests to the API.
 
 **Table of contents**
 
@@ -38,18 +36,8 @@ Configuration
 
 To configure this module you have to:
 
-1. Go to *Settings -> General -> Everee API Integration*, there you can
-   configure the Everee connection data. You have to set the following
-   fields:
-
-   - 'Enable Everee Integration': Check this field to enable the Everee
-     integration.
-   - 'API Base URLURL': The API Base URL for Everee.
-   - 'Company tenant ID': Your Everee Company tenant ID.
-   - 'API Token': The API Token generated into Everee.
-   - Save the form.
-
-2. Click on the 'Test Connection' button.
+1. Install and configurare the *Everee Base* addon. More information
+   checkout the ``everee_base`` module information.
 
 Usage
 =====
@@ -57,15 +45,70 @@ Usage
 To use this module, you only need to set up the connection to Everee
 API. To do so, see the "Configuration" section for more information.
 
-Go to Employees app and click on "Add Employee" button.
+1. If is New Employee
+
+   - Go to Employees app and click on "Add Employee" button.
+
+   - Please fill in the following fields:
+
+     - Name.
+
+     - Work Email.
+
+       - Or Private Email (Go to ``Private Information`` tab ->
+         ``Private Contact``).
+
+     - Work Phone.
+
+       - Or Private Phone (Go to ``Private Information`` tab ->
+         ``Private Contact``).
+
+     - Private Address (ONLY USA Address) (Go to ``Private Information``
+       tab -> ``Private Contact``).
+
+     - Currency (Go to ``Settings`` app -> ``Users and Companies`` ->
+       ``Companies``).
+
+   - Save the form.
+
+2. Or If Existing Employee
+
+   - Go to ``Employees`` app and click on *Employee* record.
+
+   - Please fill in the following fields:
+
+     - Name.
+
+     - Work Email.
+
+       - Or Private Email (Go to ``Private Information`` tab ->
+         ``Private Contact``).
+
+     - Work Phone.
+
+       - Or Private Phone (Go to ``Private Information`` tab ->
+         ``Private Contact``).
+
+     - Private Address (ONLY USA Address) (Go to ``Private Information``
+       tab -> ``Private Contact``).
+
+     - Currency (Go to ``Settings`` app -> ``Users and Companies`` ->
+       ``Companies``).
+
+   - Save the form.
+
+3. Click on the 'Everee Onboarding' button.
+
+4. Validate if it was successfully published on your account dashboard
+   on the `Everee platform <https://app.everee.com/login>`__.
 
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues <https://github.com/bluebonnet/everee-integration/issues>`_.
+Bugs are tracked on `Gitea Issues <https://dev.gobonum.com/BlueBonnet/everee-integration/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/bluebonnet/everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://dev.gobonum.com/BlueBonnet/everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -75,12 +118,12 @@ Credits
 Authors
 -------
 
-* Bluebonnet
+* BlueBonnet
 
 Contributors
 ------------
 
-- `Bluebonnet <https://bluebonnet.io/>`__:
+- `BlueBonnet <https://bluebonnet.io/>`__:
 
   - Leonardo J. Caballero G.
 
@@ -95,6 +138,6 @@ Current maintainer:
 
 |maintainer-macagua| 
 
-This module is part of the `bluebonnet/everee-integration <https://github.com/bluebonnet/everee-integration/tree/18.0/everee_hr>`_ project on GitHub.
+This module is part of the `bluebonnet/everee-integration <https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr>`_ project on Gitea.
 
 You are welcome to contribute.
