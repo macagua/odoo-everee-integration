@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 20:35+0000\n"
-"PO-Revision-Date: 2025-05-28 23:15+0200\n"
+"POT-Creation-Date: 2025-11-25 11:44+0000\n"
+"PO-Revision-Date: 2025-11-25 12:45+0100\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #. module: everee_base
 #: model_terms:ir.ui.view,arch_db:everee_base.view_everee_config_settings
@@ -69,12 +69,6 @@ msgid "Everee API Key"
 msgstr "Clave API de Everee"
 
 #. module: everee_base
-#. odoo-python
-#: code:addons/everee_base/models/res_config_settings.py:0
-msgid "Everee Connection Successful"
-msgstr "Éxito de la conexión a Everee"
-
-#. module: everee_base
 #: model_terms:ir.ui.view,arch_db:everee_base.view_everee_config_settings
 msgid "Everee Integration"
 msgstr "Integración con Everee"
@@ -97,8 +91,8 @@ msgstr "Establezca el ID de la empresa para Everee."
 #. module: everee_base
 #. odoo-python
 #: code:addons/everee_base/models/res_config_settings.py:0
-msgid "Successfully connected. Workers found: %d"
-msgstr "Conectado con éxito. Los empleados encontrados: %d"
+msgid "Successful connection to Everee API"
+msgstr "Conexión exitosa con la API de Everee"
 
 #. module: everee_base
 #: model_terms:ir.ui.view,arch_db:everee_base.view_everee_config_settings
@@ -114,6 +108,12 @@ msgstr "La URL base de la API para Everee."
 #: model_terms:ir.ui.view,arch_db:everee_base.view_everee_config_settings
 msgid "The API Token generated into Everee."
 msgstr "El Token de la API generado en Everee."
+
+#. module: everee_base
+#. odoo-python
+#: code:addons/everee_base/models/res_config_settings.py:0
+msgid "Workers found: %d"
+msgstr "Trabajadores encontrados: %d"
 
 #. module: everee_base
 #: model_terms:ir.ui.view,arch_db:everee_base.view_everee_config_settings

@@ -24,9 +24,9 @@ provides a simple interface for making requests to the API and handling
 responses. It is designed to be used as a base class for other
 connectors that need to interact with the Everee API.
 
-It is built using the requests library and provides methods for making
-GET, POST, PUT, and DELETE requests to the API. It also includes methods
-for handling authentication and error handling.
+It is built using the ``requests`` library and for the moment, only
+provides ``POST`` requests to the API. It also includes methods for
+handling authentication and error handling.
 
 **Table of contents**
 
@@ -38,21 +38,29 @@ Configuration
 
 To configure this module you have to:
 
-1. Go to *Settings -> General -> Everee API Integration*, there you can
+1. Go to *Settings -> General -> Developer tools*, click on the
+   ``Enable developer mode (with assets)`` link.
+
+2. Go to *Settings -> General -> Everee API Integration*, there you can
    configure the Everee connection data. You have to set the following
    fields:
 
-   .. image:: https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png
-      :alt: Everee API Integration
+   |Everee API Integration|
 
-   -  'Enable Everee Integration': Check this field to enable the Everee
-      integration.
-   -  'API Base URL': The API Base URL for Everee.
-   -  'Company tenant ID': Your Everee Company tenant ID.
-   -  'API Token': The API Token generated into Everee.
-   -  Save the form.
+   - 'Enable Everee Integration': Check this field to enable the Everee
+     integration.
+   - 'API Base URL': The API Base URL for Everee.
+   - 'Company tenant ID': Your Everee Company tenant ID.
+   - 'API Token': The API Token generated into Everee.
+   - Save the form.
 
-2. Click on the 'Test Connection' button.
+3. Click on the 'Test Connection' button.
+
+- If you are unable to establish the Everee API connection, please check
+  that the Everee platform is working correctly on its `Everee
+  status <https://status.everee.com/>`__ website.
+
+.. |Everee API Integration| image:: https://dev.gobonum.com/BlueBonnet/everee-integration/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png
 
 Usage
 =====
@@ -76,14 +84,14 @@ Credits
 Authors
 -------
 
-* Bluebonnet
+* BlueBonnet
 
 Contributors
 ------------
 
--  `Bluebonnet <https://bluebonnet.io/>`__:
+- `BlueBonnet <https://bluebonnet.io/>`__:
 
-   -  Leonardo J. Caballero G.
+  - Leonardo J. Caballero G.
 
 Maintainers
 -----------

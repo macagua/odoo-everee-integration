@@ -374,9 +374,9 @@ ul.auto-toc {
 provides a simple interface for making requests to the API and handling
 responses. It is designed to be used as a base class for other
 connectors that need to interact with the Everee API.</p>
-<p>It is built using the requests library and provides methods for making
-GET, POST, PUT, and DELETE requests to the API. It also includes methods
-for handling authentication and error handling.</p>
+<p>It is built using the <tt class="docutils literal">requests</tt> library and for the moment, only
+provides <tt class="docutils literal">POST</tt> requests to the API. It also includes methods for
+handling authentication and error handling.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -395,10 +395,13 @@ for handling authentication and error handling.</p>
 <h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
 <p>To configure this module you have to:</p>
 <ol class="arabic">
+<li><p class="first">Go to <em>Settings -&gt; General -&gt; Developer tools</em>, click on the
+<tt class="docutils literal">Enable developer mode (with assets)</tt> link.</p>
+</li>
 <li><p class="first">Go to <em>Settings -&gt; General -&gt; Everee API Integration</em>, there you can
 configure the Everee connection data. You have to set the following
 fields:</p>
-<img alt="Everee API Integration" src="https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png" />
+<p><img alt="Everee API Integration" src="https://dev.gobonum.com/BlueBonnet/odoo-web-addons/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png" /></p>
 <ul class="simple">
 <li>‘Enable Everee Integration’: Check this field to enable the Everee
 integration.</li>
@@ -411,6 +414,11 @@ integration.</li>
 <li><p class="first">Click on the ‘Test Connection’ button.</p>
 </li>
 </ol>
+<ul class="simple">
+<li>If you are unable to establish the Everee API connection, please check
+that the Everee platform is working correctly on its <a class="reference external" href="https://status.everee.com/">Everee
+status</a> website.</li>
+</ul>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
@@ -430,13 +438,13 @@ If you spotted it first, help us to smash it by providing a detailed and welcome
 <div class="section" id="authors">
 <h2><a class="toc-backref" href="#toc-entry-5">Authors</a></h2>
 <ul class="simple">
-<li>Bluebonnet</li>
+<li>BlueBonnet</li>
 </ul>
 </div>
 <div class="section" id="contributors">
 <h2><a class="toc-backref" href="#toc-entry-6">Contributors</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://bluebonnet.io/">Bluebonnet</a>:<ul>
+<li><a class="reference external" href="https://bluebonnet.io/">BlueBonnet</a>:<ul>
 <li>Leonardo J. Caballero G.</li>
 </ul>
 </li>

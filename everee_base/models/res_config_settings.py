@@ -59,7 +59,7 @@ class ResConfigSettings(models.TransientModel):
                 # Log the request to the database
                 self.env["ir.logging"].sudo().create(
                     {
-                        "name": "Everee Connection",
+                        "name": "Everee API Connection",
                         "type": "server",
                         "level": "info",
                         "dbname": self._cr.dbname,
@@ -80,9 +80,8 @@ class ResConfigSettings(models.TransientModel):
                     "type": "ir.actions.client",
                     "tag": "display_notification",
                     "params": {
-                        "title": _("Everee Connection Successful"),
-                        "message": _("Successfully connected. Workers found: %d")
-                        % len(workers_total),
+                        "title": _("Successful connection to Everee API"),
+                        "message": _("Workers found: %d") % len(workers_total["items"]),
                         "type": "success",
                         "sticky": False,
                     },
@@ -104,14 +103,14 @@ class ResConfigSettings(models.TransientModel):
             # Log the request to the database
             self.env["ir.logging"].sudo().create(
                 {
-                    "name": "Everee Connection Error",
+                    "name": "Everee API Connection Error",
                     "type": "server",
                     "level": "error",
                     "dbname": self._cr.dbname,
                     "message": f"Connection error: {str(e)}",
                     "path": "everee_base/models/res_config_settings.py",
                     "func": "action_test_everee_connection",
-                    "line": 27,  # approximate line, optional
+                    "line": 36,  # approximate line, optional
                 }
             )
             # Log the error to the console

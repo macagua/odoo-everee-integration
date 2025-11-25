@@ -1,6 +1,7 @@
 To configure this module you have to:
 
-1.  Go to *Settings -> General -> Everee API Integration*, there you can
+1.  Go to *Settings -> General -> Developer tools*, click on the `Enable developer mode (with assets)` link.
+2.  Go to *Settings -> General -> Everee API Integration*, there you can
     configure the Everee connection data. You have to set the following
     fields:
 
@@ -11,4 +12,6 @@ To configure this module you have to:
     -   'Company tenant ID': Your Everee Company tenant ID.
     -   'API Token': The API Token generated into Everee.
     -   Save the form.
-2.  Click on the 'Test Connection' button.
+3.  Click on the 'Test Connection' button.
+
+   - If you are unable to establish the Everee API connection, please check that the Everee platform is working correctly on its [Everee status](https://status.everee.com/) website.
