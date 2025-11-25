@@ -1,0 +1,29 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+description: OCA general rules for development and revision of Odoo modules.
+globs:
+  - "**/*.py"
+  - "**/*.xml"
+alwaysApply: true
+---
+
+- Follows OCA and Odoo coding conventions.
+- Use pylint-odoo and odoo-pre-commit-hooks to validate the code before committing it.
+- Do not allow unnecessary imports or dead code.
+- File and folder names must not contain spaces or special characters.
+- Modules must have a properly defined `__manifest__.py` file.
+- Models must inherit from `models.Model` and use Odoo decorators (`@api.model`, `@api.depends`, etc.) as appropriate.
+- The fields must be correctly defined and documented..
+- Methods must have clear and concise docstrings.
+- Do not use unnecessary prints or logs in production.
+- XML files must be well-formatted and comply with OCA standards.
+- The translations must be in `.po` files and follow the standard structure.
+- Before uploading code, run the linters and correct all reported errors.
+- Do not upload external dependencies not approved by OCA.
+- It follows the standard Odoo folder structure: `models`, `views`, `wizards`, `data`, `security`, etc.
+
+@02-oca-general.mdc
