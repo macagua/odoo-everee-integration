@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 12:10+0000\n"
-"PO-Revision-Date: 2025-11-25 13:11+0100\n"
+"POT-Creation-Date: 2025-11-27 12:52+0000\n"
+"PO-Revision-Date: 2025-11-27 14:00+0100\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -32,15 +32,26 @@ msgstr "Empleado"
 #. module: everee_hr
 #. odoo-python
 #: code:addons/everee_hr/models/hr_employee.py:0
-msgid "Employee data Successfully published"
-msgstr "Datos de los empleados publicados correctamente"
+msgid ""
+"Employee %s has been successfully published on Everee.\n"
+"Worker ID: %s\n"
+"Status: %s"
+msgstr ""
+"El empleado %s ha sido publicado correctamente en Everee.\n"
+"ID del trabajador: %s.\n"
+"Estado: %s"
 
 #. module: everee_hr
 #. odoo-python
 #: code:addons/everee_hr/models/hr_employee.py:0
-msgid "Employee data has been successfully published on Everee."
-msgstr ""
-"Los datos de los empleados se han publicado correctamente en Everee."
+msgid "Employee Successfully Published"
+msgstr "Empleado publicado con éxito"
+
+#. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Error on Onboarding API (Code %s): %s"
+msgstr "Error en la API del Onboarding (Código %s): %s"
 
 #. module: everee_hr
 #: model_terms:ir.ui.view,arch_db:everee_hr.view_hr_employee
@@ -48,6 +59,19 @@ msgid "Everee Onboarding"
 msgstr "Incorporación a Everee"
 
 #. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Invalid phone number: '%s'. Phone must be 10 digits for Everee API."
+msgstr ""
+"Número de teléfono no válido: '%s'. El número de teléfono debe tener 10 "
+"dígitos para la API de Everee."
+
+#. module: everee_hr
 #: model:ir.model.fields,field_description:everee_hr.field_hr_employee__is_onboarding_started
 msgid "Is this employee onboard on Everee?"
 msgstr "¿Este empleado está registrado en Everee?"
+
+#. module: everee_hr
+#: model_terms:ir.ui.view,arch_db:everee_hr.view_hr_employee
+msgid "✓ Employee was successfully onboarded to Everee"
+msgstr "✓ El empleado se incorporó con éxito a Everee"

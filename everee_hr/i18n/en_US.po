@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 12:10+0000\n"
-"PO-Revision-Date: 2025-11-25 12:10+0000\n"
+"POT-Creation-Date: 2025-11-27 12:52+0000\n"
+"PO-Revision-Date: 2025-11-27 12:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,13 +28,22 @@ msgstr ""
 #. module: everee_hr
 #. odoo-python
 #: code:addons/everee_hr/models/hr_employee.py:0
-msgid "Employee data Successfully published"
+msgid ""
+"Employee %s has been successfully published on Everee.\n"
+"Worker ID: %s\n"
+"Status: %s"
 msgstr ""
 
 #. module: everee_hr
 #. odoo-python
 #: code:addons/everee_hr/models/hr_employee.py:0
-msgid "Employee data has been successfully published on Everee."
+msgid "Employee Successfully Published"
+msgstr ""
+
+#. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Error on Onboarding API (Code %s): %s"
 msgstr ""
 
 #. module: everee_hr
@@ -43,6 +52,17 @@ msgid "Everee Onboarding"
 msgstr ""
 
 #. module: everee_hr
+#. odoo-python
+#: code:addons/everee_hr/models/hr_employee.py:0
+msgid "Invalid phone number: '%s'. Phone must be 10 digits for Everee API."
+msgstr ""
+
+#. module: everee_hr
 #: model:ir.model.fields,field_description:everee_hr.field_hr_employee__is_onboarding_started
 msgid "Is this employee onboard on Everee?"
+msgstr ""
+
+#. module: everee_hr
+#: model_terms:ir.ui.view,arch_db:everee_hr.view_hr_employee
+msgid "✓ Employee was successfully onboarded to Everee"
 msgstr ""

@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <record id="view_hr_employee" model="ir.ui.view">
         <field name="name">hr.employee.view.form.everee</field>
         <field name="model">hr.employee</field>
-        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="inherit_id" ref="hr.view_employee_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='coach_id']" position="after">
-                <button name="action_everee_onboarding"
-                        string="Everee Onboarding"
-                        type="object" />
+                <button
+                    name="action_everee_onboarding"
+                    string="Everee Onboarding"
+                    type="object"
+                    class="oe_highlight"
+                    invisible="is_onboarding_started"
+                />
+                <div
+                    class="badge rounded-pill text-bg-success"
+                    invisible="not is_onboarding_started"
+                >
+                    ✓ Employee was successfully onboarded to Everee
+                </div>
+
+                <field name="is_onboarding_started" invisible="1" />
             </xpath>
         </field>
     </record>
