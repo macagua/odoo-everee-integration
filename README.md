@@ -34,7 +34,7 @@ addon | version | maintainers | summary
 
 This repository is [Copyright](LICENSE.md) (C) 2025.
 
-However, each module can have a totally different license, as long as they adhere to Bluebonnet
+However, each module can have a totally different license, as long as they adhere to BlueBonnet
 policy. Consult each module's `__manifest__.py` file, which contains a `license` key
 that explains its license.
 

@@ -15,7 +15,7 @@ github_enforce_dev_status_compatibility: true
 include_wkhtmltopdf: false
 odoo_test_flavor: Odoo
 odoo_version: 18.0
-org_name: Bluebonnet
+org_name: BlueBonnet
 org_slug: bluebonnet
 rebel_module_groups: []
 repo_description: This repository included some Odoo addons for the Everee API integration
