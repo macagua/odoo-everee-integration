@@ -21,7 +21,7 @@ To configure this module you have to:
 2.  Go to _Settings -\> General -\> Everee API Integration_, there you can configure the
     Everee connection data. You have to set the following fields:
 
-    ![Everee API Integration](https://github.com/macagua/odoo-everee-integration/media/branch/18.0/everee_base/static/description/screenshots/screenshot_step_0.png)
+    ![Everee API Integration](https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/everee_base/static/description/screenshots/screenshot_step_0.png)
 
         - \'Enable Everee Integration\': Check this field to enable the Everee integration.
         - \'API Base URL\': The API Base URL for Everee.

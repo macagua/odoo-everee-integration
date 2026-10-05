@@ -5,7 +5,7 @@ To configure this module you have to:
     configure the Everee connection data. You have to set the following
     fields:
 
-    ![Everee API Integration](../static/description/screenshots/screenshot_step_0.png "Everee API Integration")
+    ![Everee API Integration](https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/everee_base/static/description/screenshots/screenshot_step_0.png "Everee API Integration")
 
     -   `Enable Everee Integration`: Check this field to enable the Everee integration.
     -   `API Base URL`: The API Base URL for Everee.

@@ -65,7 +65,7 @@ To configure this module you have to:
   that the Everee platform is working correctly on its `Everee
   status <https://status.everee.com/>`__ website.
 
-.. |Everee API Integration| image:: https://raw.githubusercontent.com/macagua/odoo-everee-integration/18.0/everee_base/static/description/screenshots/screenshot_step_0.png
+.. |Everee API Integration| image:: https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/everee_base/static/description/screenshots/screenshot_step_0.png
 
 Usage
 =====
