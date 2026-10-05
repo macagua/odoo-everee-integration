@@ -9,9 +9,9 @@
 
 # Everee API Integration
 
-![Everee Pay](https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/docs/everee-pay-logo-black.svg "Everee Pay")
-
 This repository included some Odoo addons for the [Everee API integration](https://developer.everee.com/docs/introduction).
+
+<img width="300" alt="Everee Pay Logo" src="https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/docs/everee-pay-logo-black.svg">
 
 <!-- /!\ do not modify below this line -->
 
