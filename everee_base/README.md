@@ -23,22 +23,22 @@ To configure this module you have to:
 
     ![Everee API Integration](https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/everee_base/static/description/screenshots/screenshot_step_0.png)
 
-        - \'Enable Everee Integration\': Check this field to enable the Everee integration.
-        - \'API Base URL\': The API Base URL for Everee.
-        - \'Company tenant ID\': Your Everee Company tenant ID.
-        - \'API Token\': The API Token generated into Everee.
-        - Save the form.
+    - `Enable Everee Integration`: Check this field to enable the Everee integration.
+    - `API Base URL`: The API Base URL for Everee.
+    - `Company tenant ID`: Your Everee Company tenant ID.
+    - `API Token`: The API Token generated into Everee.
+    - `Save` the form.
 
-3.  Click on the \'Test Connection\' button.
+3.  Click on the `Test Connection` button.
 
-- If you are unable to establish the Everee API connection, please check that the Everee
-  platform is working correctly on its [Everee status](https://status.everee.com/)
-  website.
+    - If you are unable to establish the Everee API connection, please check that the
+      Everee platform is working correctly on its
+      [Everee status](https://status.everee.com/) website.
 
 ## Usage
 
 To use this module, you only need to set up the connection to Everee. To do so, see the
-\"Configuration\" section for more information.
+\"[Configuration](#configuration)\" section for more information.
 
 ## Bug Tracker
 
