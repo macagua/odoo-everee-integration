@@ -5,11 +5,13 @@
 ![Translation Status](https://img.shields.io/badge/macagua/odoo-passing-integration?style=flat&logo=github&label=macagua/odoo-everee-integration&color=green&link=https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_base)
 [![passing](https://img.shields.io/badge/translated-passing-green.png)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_base)
 
+<img width="300" alt="Everee Pay Logo" src="https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/docs/everee-pay-logo-black.svg">
+
 This is a base module that allows you to connect to the Everee API. It provides a simple
 interface for making requests to the API and handling responses. It is designed to be
 used as a base class for other connectors that need to interact with the Everee API.
 
-It is built using the `requests` library and for the moment, only provides `POST`
+It is built using the [requests](https://pypi.org/project/requests/) library and for the moment, only provides `POST`
 requests to the API. It also includes methods for handling authentication and error
 handling.
 

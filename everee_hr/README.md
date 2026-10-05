@@ -5,6 +5,8 @@
 ![Translation Status](https://img.shields.io/badge/macagua/odoo-passing-integration?style=flat&logo=github&label=macagua/odoo-everee-integration&color=green&link=https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
 [![passing](https://img.shields.io/badge/translated-passing-green.png)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
 
+<img width="300" alt="Everee Pay Logo" src="https://raw.githubusercontent.com/macagua/odoo-everee-integration/refs/heads/18.0/docs/everee-pay-logo-black.svg">
+
 This is a Human Resources module that allows you via Everee API:
 
 - Onboarding for the employees.
