@@ -1,3 +1,7 @@
+# Copyright (C) 2025 BlueBonnet
+# Copyright 2026 Leonardo J. Caballero G.
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
 import base64
 import logging
 

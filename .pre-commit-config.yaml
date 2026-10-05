@@ -48,13 +48,13 @@ repos:
       # update the NOT INSTALLABLE ADDONS section above
       - id: oca-update-pre-commit-excluded-addons
       - id: oca-fix-manifest-website
-        args: ["https://bluebonnet.io/"]
+        args: ["https://github.com/macagua/"]
       - id: oca-gen-addon-readme
         args:
           - --addons-dir=.
           - --branch=18.0
-          - --org-name=bluebonnet
-          - --repo-name=everee-integration
+          - --org-name=macagua
+          - --repo-name=odoo-everee-integration
           - --if-source-changed
           - --keep-source-digest
           - --convert-fragments-to-markdown

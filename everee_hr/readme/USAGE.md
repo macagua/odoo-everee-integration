@@ -10,9 +10,11 @@ do so, see the "Configuration" section for more information.
      - Name.
 
      - Work Email.
+
        - Or Private Email (Go to `Private Information` tab -> `Private Contact`).
 
      - Work Phone.
+
        - Or Private Phone (Go to `Private Information` tab -> `Private Contact`).
 
      - Private Address (ONLY USA Address) (Go to `Private Information` tab -> `Private Contact`).
@@ -27,20 +29,22 @@ do so, see the "Configuration" section for more information.
 
    - Please fill in the following fields:
 
-     - Name.
+     - `Name`.
 
-     - Work Email.
+     - `Work Email`.
+
        - Or Private Email (Go to `Private Information` tab -> `Private Contact`).
 
-     - Work Phone.
+     - `Work Phone`.
+
        - Or Private Phone (Go to `Private Information` tab -> `Private Contact`).
 
-     - Private Address (ONLY USA Address) (Go to `Private Information` tab -> `Private Contact`).
+     - `Private Address` (ONLY USA Address) (Go to `Private Information` tab -> `Private Contact`).
 
      - Currency (Go to `Settings` app -> `Users and Companies` -> `Companies`).
 
-   - Save the form.
+   - `Save` the form.
 
-3.  Click on the 'Everee Onboarding' button.
+3.  Click on the `Everee Onboarding` button.
 
 4.  Validate if it was successfully published on your account dashboard on the [Everee platform](https://app.everee.com/login).

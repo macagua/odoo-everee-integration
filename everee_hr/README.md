@@ -1,7 +1,7 @@
 # Human Resources Everee API Integration
 
 [![Beta](https://img.shields.io/badge/maturity-Beta-yellow.png)](https://odoo-community.org/page/development-status)
-[![bluebonnet/everee-integration](https://img.shields.io/badge/gitea-bluebonnet%2Feveree--integration-lightgray.png?logo=gitea)](https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr)
+[![macagua/odoo-everee-integration](https://img.shields.io/badge/gitea-macagua%2Fodoo-everee-integration--integration-lightgray.png?logo=gitea)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
 
 This is a Human Resources module that allows you via Everee API:
 
@@ -53,10 +53,10 @@ the \"Configuration\" section for more information.
 ## Bug Tracker
 
 Bugs are tracked on
-[Gitea Issues](https://dev.gobonum.com/BlueBonnet/everee-integration/issues). In case of
+[GitHub Issues](https://github.com/macagua/odoo-everee-integration/issues). In case of
 trouble, please check there if your issue has already been reported. If you spotted it
 first, help us to smash it by providing a detailed and welcomed
-[feedback](https://dev.gobonum.com/BlueBonnet/everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**).
+[feedback](https://github.com/macagua/odoo-everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**).
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -65,11 +65,12 @@ Do not contact contributors directly about support or help with technical issues
 ### Authors
 
 - BlueBonnet
+- Leonardo J. Caballero G.
 
 ### Contributors
 
-- [BlueBonnet](https://bluebonnet.io/):
-  - Leonardo J. Caballero G.
+- [BlueBonnet](https://bluebonnet.io/).
+- [Leonardo J. Caballero G.](https://github.com/macagua/).
 
 ### Maintainers
 
@@ -78,7 +79,7 @@ Current maintainer:
 [![macagua](https://github.com/macagua.png?size=40px)](https://github.com/macagua)
 
 This module is part of the
-[bluebonnet/everee-integration](https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr)
-project on Gitea.
+[macagua/odoo-everee-integration](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
+project on GitHub.
 
 You are welcome to contribute.

@@ -1,15 +1,15 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/pre-commit.yml?query=branch%3A18.0)
-[![Build Status](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/test.yml/badge.svg?branch=18.0)](https://dev.gobonum.com/BlueBonnet/everee-integration/actions/workflows/test.yml?query=branch%3A18.0)
-[![codecov](https://codecov.io/gh/bluebonnet/everee-integration/branch/18.0/graph/badge.svg)](https://codecov.io/gh/bluebonnet/everee-integration)
+[![Pre-commit Status](https://github.com/macagua/odoo-everee-integration/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/macagua/odoo-everee-integration/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/macagua/odoo-everee-integration/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/macagua/odoo-everee-integration/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/macagua/odoo-everee-integration/branch/18.0/graph/badge.svg)](https://codecov.io/gh/macagua/odoo-everee-integration)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
 
 # Everee API Integration
 
-This repository included some Odoo addons for the Everee API integration
+This repository included some Odoo addons for the [Everee API integration](https://developer.everee.com/docs/introduction).
 
 <!-- /!\ do not modify below this line -->
 
@@ -17,7 +17,7 @@ This repository included some Odoo addons for the Everee API integration
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+This part will be replaced when running the [oca-gen-addons-table](https://github.com/OCA/maintainer-tools/blob/master/tools/gen_addons_table.py) script from [OCA/maintainer-tools](https://github.com/OCA/maintainer-tools).
 
 Available addons
 ----------------
@@ -32,10 +32,10 @@ addon | version | maintainers | summary
 
 ## Licenses
 
-This repository is [Copyright](LICENSE.md) (C) 2025.
+This repository is [Copyright](LICENSE.md) (C) 2025, 2026.
 
-However, each module can have a totally different license, as long as they adhere to BlueBonnet
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+However, each module can have a totally different license, as long as they adhere to policy.
+Consult each module's `__manifest__.py` file, which contains a `license` key
 that explains its license.
 
 ----

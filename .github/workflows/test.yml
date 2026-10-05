@@ -69,4 +69,4 @@ jobs:
           }}@github.com/${{ github.repository }}
         if:
           ${{ matrix.makepot == 'true' && github.event_name == 'push' &&
-          github.repository_owner == 'bluebonnet' }}
+          github.repository_owner == 'macagua' }}

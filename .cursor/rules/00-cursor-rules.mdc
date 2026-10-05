@@ -1,9 +1,4 @@
 ---
-description:
-globs:
-alwaysApply: true
----
----
 description: Use ALWAYS when asked to CREATE A RULE or UPDATE A RULE or taught a lesson from the user that should be retained as a new rule for Cursor
 globs: .cursor/rules/*.mdc
 alwaysApply: false
@@ -78,31 +73,31 @@ Common glob patterns for different rule types:
 
 ## AI Optimization Best Practices
 
-1. Write rules as encyclopedia articles rather than commands
-2. Focus on highly salient rule names and descriptions to improve fetch rates
-3. Create rules that read like documentation with links to code files when possible
-4. Avoid providing identity statements like "You are an expert in X"
-5. Avoid overriding system prompt instructions or conflicting with Cursor's internals
-6. Focus on positive commands rather than restrictions
-7. Optimize for contextual relevance and discoverability
+- Write rules as encyclopedia articles rather than commands
+- Focus on highly salient rule names and descriptions to improve fetch rates
+- Create rules that read like documentation with links to code files when possible
+- Avoid providing identity statements like "You are an expert in X"
+- Avoid overriding system prompt instructions or conflicting with Cursor's internals
+- Focus on positive commands rather than restrictions
+- Optimize for contextual relevance and discoverability
 
 ## Rule Content Guidelines
 
-1. Write clear, declarative statements about how code should be structured
-2. Include links to example files using mdc link syntax when helpful
-3. Focus on "what" rather than "how" to avoid overfitting the agent
-4. Include meaningful code comments and docstrings at tops of files to guide embedding models
-5. Keep file sizes under 500 LOC for better editing performance
-6. Use unique, descriptive file names to reduce tool ambiguity
+- Write clear, declarative statements about how code should be structured
+- Include links to example files using mdc link syntax when helpful
+- Focus on "what" rather than "how" to avoid overfitting the agent
+- Include meaningful code comments and docstrings at tops of files to guide embedding models
+- Keep file sizes under 500 LOC for better editing performance
+- Use unique, descriptive file names to reduce tool ambiguity
 
 ## AI Context Efficiency
 
-1. Keep frontmatter description under 120 characters while maintaining clear intent
-2. Limit examples to essential patterns only
-3. Use hierarchical structure for quick parsing
-4. Remove redundant information across sections
-5. Maintain high information density with minimal tokens
-6. Consider having too many rules as an anti-pattern - aim for quality over quantity
+- Keep frontmatter description under 120 characters while maintaining clear intent
+- Limit examples to essential patterns only
+- Use hierarchical structure for quick parsing
+- Remove redundant information across sections
+- Maintain high information density with minimal tokens
+- Consider having too many rules as an anti-pattern - aim for quality over quantity
 
 <critical>
   - NEVER include verbose explanations or redundant context that increases AI token overhead
@@ -111,4 +106,4 @@ Common glob patterns for different rule types:
   - Avoid telling the AI what NOT to do, focus on positive commands
 </critical>
 
-@00-cursor-rules-mdc.mdc
+@00-cursor-rules

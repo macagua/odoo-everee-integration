@@ -13,18 +13,22 @@ Human Resources Everee API Integration
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/gitea-bluebonnet%2Feveree--integration-lightgray.png?logo=gitea
-    :target: https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr
-    :alt: bluebonnet/everee-integration
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+    :alt: License: AGPL-3
+.. |badge3| image:: https://img.shields.io/badge/github-macagua%2Fodoo--everee--integration-lightgray.png?logo=github
+    :target: https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr
+    :alt: macagua/odoo-everee-integration
 
-|badge1| |badge2|
+|badge1| |badge2| |badge3|
 
-This is a Human Resources module that allows you via Everee API:
+This is a *Human Resources* module that allows you via `Everee
+API <https://developer.everee.com/docs/introduction>`__ integration:
 
 - Onboarding for the employees.
 
-It is built using the ``requests`` library and for the moment, only
-provides ``POST`` requests to the API.
+It is built using the `requests <https://pypi.org/project/requests/>`__
+library and for the moment, only provides ``POST`` requests to the API.
 
 **Table of contents**
 
@@ -77,27 +81,27 @@ API. To do so, see the "Configuration" section for more information.
 
    - Please fill in the following fields:
 
-     - Name.
+     - ``Name``.
 
-     - Work Email.
+     - ``Work Email``.
 
        - Or Private Email (Go to ``Private Information`` tab ->
          ``Private Contact``).
 
-     - Work Phone.
+     - ``Work Phone``.
 
        - Or Private Phone (Go to ``Private Information`` tab ->
          ``Private Contact``).
 
-     - Private Address (ONLY USA Address) (Go to ``Private Information``
-       tab -> ``Private Contact``).
+     - ``Private Address`` (ONLY USA Address) (Go to
+       ``Private Information`` tab -> ``Private Contact``).
 
      - Currency (Go to ``Settings`` app -> ``Users and Companies`` ->
        ``Companies``).
 
-   - Save the form.
+   - ``Save`` the form.
 
-3. Click on the 'Everee Onboarding' button.
+3. Click on the ``Everee Onboarding`` button.
 
 4. Validate if it was successfully published on your account dashboard
    on the `Everee platform <https://app.everee.com/login>`__.
@@ -105,10 +109,10 @@ API. To do so, see the "Configuration" section for more information.
 Bug Tracker
 ===========
 
-Bugs are tracked on `Gitea Issues <https://dev.gobonum.com/BlueBonnet/everee-integration/issues>`_.
+Bugs are tracked on `GitHub Issues <https://github.com/macagua/odoo-everee-integration/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://dev.gobonum.com/BlueBonnet/everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/macagua/odoo-everee-integration/issues/new?body=module:%20everee_hr%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -119,13 +123,13 @@ Authors
 -------
 
 * BlueBonnet
+* Leonardo J. Caballero G.
 
 Contributors
 ------------
 
-- `BlueBonnet <https://bluebonnet.io/>`__:
-
-  - Leonardo J. Caballero G.
+- `BlueBonnet <https://bluebonnet.io/>`__.
+- `Leonardo J. Caballero G. <https://github.com/macagua/>`__.
 
 Maintainers
 -----------
@@ -138,6 +142,6 @@ Current maintainer:
 
 |maintainer-macagua| 
 
-This module is part of the `bluebonnet/everee-integration <https://dev.gobonum.com/BlueBonnet/everee-integration/tree/18.0/everee_hr>`_ project on Gitea.
+This module is part of the `macagua/odoo-everee-integration <https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr>`_ project on GitHub.
 
 You are welcome to contribute.

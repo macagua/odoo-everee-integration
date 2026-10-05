@@ -1,20 +1,22 @@
 ---
-description:
+description: Odoo 18 codebase patterns for module structure, coding standards, and conventions in the Odoo ecosystem
 globs:
+  - "*.py"
+  - "**/models/*.py"
+  - "**/controllers/*.py"
+  - "**/wizards/*.py"
+  - "**/security/*.py"
+  - "**/tests/*.py"
 alwaysApply: false
 ---
----
-description: Odoo 18 and BlueBonnet codebase patterns for module structure, coding standards, and conventions in the BlueBonnet ecosystem
-globs: *.py,**/models/*.py,**/controllers/*.py,**/wizards/*.py,**/security/*.py,**/tests/*.py
-alwaysApply: false
----
-# Odoo 18 and BlueBonnet Development Reference
+
+# Odoo 18 Development Reference
 
 ## Context
-This reference applies to Python modules developed in the BlueBonnet ecosystem built on Odoo 18. BlueBonnet extends Odoo's functionality with specialized modules for social protection programs.
+This reference applies to Python modules developed in the ecosystem built on Odoo 18. You extends Odoo's functionality with specialized modules for social protection programs.
 
 ## Module Structure
-The standard Odoo module structure in BlueBonnet consists of these directories and files:
+The standard Odoo module structure in consists of these directories and files:
 
 - `__init__.py` - Module entry point with imports
 - `__manifest__.py` - Module descriptor with metadata
@@ -30,7 +32,7 @@ The standard Odoo module structure in BlueBonnet consists of these directories a
 - `tests/` - Test files for the module
 
 ## Python Coding Standards
-Odoo 18 in BlueBonnet follows these Python coding patterns:
+Odoo 18 follows these Python coding patterns:
 
 - 4 spaces for indentation, no tabs
 - Maximum line length of 79 characters
@@ -45,7 +47,7 @@ Odoo 18 in BlueBonnet follows these Python coding patterns:
   4. Module imports (relative)
 
 ## Security Implementation
-Security in BlueBonnet modules uses these patterns:
+Security in Odoo modules uses these patterns:
 
 - Access rights defined in CSV files (ir.model.access.csv)
 - Record rules for complex security requirements
@@ -55,10 +57,11 @@ Security in BlueBonnet modules uses these patterns:
 - Sensitive data encryption
 
 ## Examples
-<example>
-# Standard Odoo 18 module structure example
 
-addons/bluebonnet_extension/
+Standard Odoo 18 module structure example:
+
+```
+addons/odoo_extension/
 |-- __init__.py
 |-- __manifest__.py
 |-- models/
@@ -80,24 +83,25 @@ addons/bluebonnet_extension/
 |   |-- __init__.py
 |   |-- test_partner.py
 |   |-- test_entitlement.py
-</example>
+```
 
-<example type="invalid">
-# Non-standard module structure with pattern issues
+Non-standard module structure with pattern issues:
 
-my_bluebonnet_mod/
+```
+my_odoo_mod/
 |-- main.py  # Non-standard entry point
 |-- models.py  # All models in one file
 |-- views.xml  # All views in one file
 |-- demo.xml
-</example>
+```
 
 ## Documentation Patterns
-Effective documentation in BlueBonnet includes:
+
+Effective documentation in Odoo includes:
 
 - Docstrings for all classes and methods
 - Comments explaining complex business logic
 - Updated README.md with installation and usage instructions
 - Standard method ordering within model classes
 
-@03-odoo18-bluebonnet-general
+@02-odoo18-oca-development-general
