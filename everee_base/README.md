@@ -1,7 +1,7 @@
 # Everee Base
 
 [![Beta](https://img.shields.io/badge/maturity-Beta-yellow.png)](https://odoo-community.org/page/development-status)
-[![macagua/odoo-everee-integration](https://img.shields.io/badge/gitea-macagua%2Fodoo-everee-integration--integration-lightgray.png?logo=gitea)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_base)
+[![macagua/odoo-everee-integration](https://img.shields.io/badge/github-macagua%2Fodoo-everee-integration--integration-lightgray.png?logo=github)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_base)
 
 This is a base module that allows you to connect to the Everee API. It provides a simple
 interface for making requests to the API and handling responses. It is designed to be

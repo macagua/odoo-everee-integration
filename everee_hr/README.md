@@ -1,7 +1,7 @@
 # Human Resources Everee API Integration
 
 [![Beta](https://img.shields.io/badge/maturity-Beta-yellow.png)](https://odoo-community.org/page/development-status)
-[![macagua/odoo-everee-integration](https://img.shields.io/badge/gitea-macagua%2Fodoo-everee-integration--integration-lightgray.png?logo=gitea)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
+[![macagua/odoo-everee-integration](https://img.shields.io/badge/github-macagua%2Fodoo-everee-integration--integration-lightgray.png?logo=github)](https://github.com/macagua/odoo-everee-integration/tree/18.0/everee_hr)
 
 This is a Human Resources module that allows you via Everee API:
 
